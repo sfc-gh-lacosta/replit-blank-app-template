@@ -1,0 +1,20 @@
+entrypoint = "main.py"
+modules = ["python-3.10"]
+run = "streamlit run main.py"
+
+[nix]
+channel = "stable-23_05"
+
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[deployment]
+run = ["sh", "-c", "streamlit run main.py"]
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 8501
+externalPort = 80
