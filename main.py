@@ -1,8 +1,8 @@
-import streamlit as st
-import numpy as np
-import scipy.stats as stats
 import altair as alt
+import numpy as np
 import pandas as pd
+import scipy.stats as stats
+import streamlit as st
 
 
 def calculate_sample_size(baseline_rate,
@@ -112,7 +112,7 @@ with tab1:
     mde = st.slider(
         f"Minimum Detectable Effect **({measurement_type.lower()})**",
         0.01,
-        1.00,
+        0.50,
         st.session_state.get('ssc_mde', 0.05),
         0.01,
         key="ssc_mde",
@@ -256,5 +256,5 @@ with tab2:
 
 # Footer
 st.markdown(
-    "<div style='text-align: center; color: grey;'>Made with ❤️ by <a href='https://x.com/mattppal'>Matt</a> @ <a href='https://repl.it'>Replit</a></div> ",
+    "<div style='text-align: center; color: grey;'>Made with ❤️ by <a href='https://x.com/mattppal'>Matt</a> @ Replit. Source code <a href='https://replit.com/@matt/Streamlit-AB-Testing?v=1'>here</a>.</div>",
     unsafe_allow_html=True)
