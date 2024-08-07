@@ -6,6 +6,8 @@ This Streamlit app provides tools for AB testing, including a Sample Size Calcul
   <img src="https://github.com/user-attachments/assets/430fd1fd-5cb3-4a0b-9b64-bc8971a46a27" width="75%"/>
 </div>
 
+The full source code is available to fork and run on [Replit](https://replit.com/@matt/Streamlit-AB-Testing?v=1). 
+
 ## Features
 
 1. Sample Size Calculator
@@ -16,11 +18,5 @@ This Streamlit app provides tools for AB testing, including a Sample Size Calcul
    - Input conversion and sample data for two groups
    - Calculate and display p-value, confidence intervals, and relative/absolute impact
    - Visualize results with interactive charts
-
-## Run on Replit
-
-The full source code is available to fork and run on [Replit](https://replit.com/@matt/Streamlit-AB-Testing?v=1). 
-
-This code can also be run locally, just clone the repo, configure a venv, and install poetry.
 
 Created by [Matt](https://x.com/mattppal) @ Replit
