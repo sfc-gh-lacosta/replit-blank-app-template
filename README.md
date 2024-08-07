@@ -19,6 +19,8 @@ This Streamlit app provides tools for AB testing, including a Sample Size Calcul
 
 ## Run on Replit
 
-The full source code is available to fork and run on [Replit](https://replit.com/@matt/Streamlit-AB-Testing?v=1).
+The full source code is available to fork and run on [Replit](https://replit.com/@matt/Streamlit-AB-Testing?v=1). 
+
+This code can also be run locally, just clone the repo, configure a venv, and install poetry.
 
 Created by [Matt](https://x.com/mattppal) @ Replit
