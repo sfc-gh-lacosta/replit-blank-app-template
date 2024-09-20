@@ -9,6 +9,6 @@ requiredFiles = [".replit"]
 run = ["sh", "-c", "streamlit run app.py"]
 deploymentTarget = "cloudrun"
 
-[ports]
+[[ports]]
 localPort = 8501
 externalPort = 80
