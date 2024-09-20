@@ -1,4 +1,4 @@
-entrypoint = "README.md"
+entrypoint = "streamlit run streamlit_app.py"
 modules = ["python-3.12"]
 run = "streamlit run streamlit_app.py"
 
