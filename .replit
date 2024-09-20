@@ -1,6 +1,6 @@
 entrypoint = "README.md"
 modules = ["python-3.12"]
-run = "streamlit run streamlit_app.py"
+run = "streamlit run app.py"
 
 [nix]
 channel = "stable-23_05"
@@ -9,7 +9,7 @@ channel = "stable-23_05"
 requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["sh", "-c", "streamlit run streamlit_app.py"]
+run = ["sh", "-c", "streamlit run app.py"]
 deploymentTarget = "cloudrun"
 
 [[ports]]
