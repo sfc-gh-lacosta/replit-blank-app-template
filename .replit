@@ -1,3 +1,4 @@
+entrypoint = "streamlit_app.py"
 modules = ["python-3.12", "nix"]
 run = "streamlit run streamlit_app.py"
 
