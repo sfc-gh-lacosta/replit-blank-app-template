@@ -1,4 +1,4 @@
-entrypoint = ["echo", "'Hello? World!'"]
+entrypoint = README.md
 
 modules = ["python-3.12"] 
 
