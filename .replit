@@ -1,7 +1,12 @@
 entrypoint = "README.md"
 modules = ["python-3.12"]
 
-run = "streamlit run streamlit_app.py"
+[run]
+args = ["pip", "install", "-r", "requirements.txt"]
+[run.env]
+STREAMLIT_APP_PATH = "streamlit_app.py"
+[run.command]
+args = ["streamlit", "run", "$STREAMLIT_APP_PATH"]
 
 # Install requirements.txt on startup
 onstart = "pip install -r requirements.txt"
