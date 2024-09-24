@@ -1,23 +1,24 @@
-entrypoint = "README.md"
-modules = ["python-3.12"]
+# Entrypoint is not needed since the `run` section handles the command
+#entrypoint = "README.md"
+
+modules = ["python-3.12"] 
 
 [run]
-args = ["pip", "install", "-r", "requirements.txt"]
-[run.env]
-STREAMLIT_APP_PATH = "streamlit_app.py"
-[run.command]
-args = ["streamlit", "run", "$STREAMLIT_APP_PATH"]
+command = "streamlit run streamlit_app.py"
+args = ["--server.port", "8501"] 
 
-# Install requirements.txt on startup
+# Optional: Configure the port if needed
+
+# Install dependencies on startup
 onstart = "pip install -r requirements.txt"
 
 [gitHubImport]
 requiredFiles = [".replit"]
 
 [deployment]
-run = ["sh", "-c", "streamlit run streamlit_app.py"]
+# Simplified deployment command
+run = ["streamlit", "run", "streamlit_app.py"]
 deploymentTarget = "cloudrun"
-
 [[ports]]
 localPort = 8501
 externalPort = 80
