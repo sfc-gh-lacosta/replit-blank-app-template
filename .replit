@@ -1,13 +1,8 @@
-entrypoint = "README.md"
+entrypoint = ["echo", "'Hello? World!'"]
 
 modules = ["python-3.12"] 
 
-[run]
-command = "streamlit run streamlit_app.py"
-args = ["--server.port", "8501"] 
-
-[gitHubImport]
-requiredFiles = [".replit", "replit.nix"]
+run = ["streamlit run streamlit_app.py"]
 
 [deployment]
 # Simplified deployment command
