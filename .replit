@@ -1,4 +1,4 @@
-entrypoint = README.md
+entrypoint = "README.md"
 
 modules = ["python-3.12"] 
 
