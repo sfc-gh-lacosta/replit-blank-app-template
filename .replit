@@ -1,12 +1,17 @@
 entrypoint = "README.md"
 modules = ["python-3.12"]
-run = "streamlit run app.py"
+
+[run]
+command = ["streamlit", "run", "streamlit_app.py"]
+
+[startup]
+command = ["streamlit", "run", "streamlit_app.py"]
 
 [gitHubImport]
 requiredFiles = [".replit"]
 
 [deployment]
-run = ["sh", "-c", "streamlit run app.py"]
+run = ["sh", "-c", "streamlit run streamlit_app.py"]
 deploymentTarget = "cloudrun"
 
 [[ports]]
