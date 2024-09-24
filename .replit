@@ -1,6 +1,9 @@
 entrypoint = "README.md"
-modules = ["python-3.12"] 
+modules = ["python-3.12"]
 run = "streamlit run streamlit_app.py"
+
+[gitHubImport]
+requiredFiles = [".replit"]
 
 [deployment]
 run = ["sh", "-c", "streamlit run streamlit_app.py"]
@@ -9,3 +12,6 @@ deploymentTarget = "cloudrun"
 [[ports]]
 localPort = 8501
 externalPort = 80
+
+[nix]
+channel = "stable-24_05"
