@@ -1,16 +1,19 @@
-modules = ["python-3.12"]
-run = ["sh", "-c", "streamlit run streamlit_app.py"]
+modules = ["python-3.12", "nix"]
+run = "streamlit run main.py"
+
+[nix]
+channel = "stable-24_05"
+
+[unitTest]
+language = "python3"
 
 [gitHubImport]
-requiredFiles = [".replit"]
+requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["sh", "-c", "streamlit run streamlit_app.py"]
+run = ["sh", "-c", "streamlit run main.py"]
 deploymentTarget = "cloudrun"
 
 [[ports]]
 localPort = 8501
 externalPort = 80
-
-[nix]
-channel = "stable-24_05"
