@@ -1,6 +1,6 @@
 # 🎈 A blank Streamlit app template
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+🔗 [See the deployed app](https://blank-app-template.streamlit.app/) 
 
 This repo contains everything you need to get started building a simple Streamlit app using Replit.
 
