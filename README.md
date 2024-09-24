@@ -44,7 +44,7 @@ To learn more about how to configure your Repl, see the documentation [here](htt
 
 The app should be deployed on `localhost`.
 
-## Learn more
+## ✨ Learn more 
 
 * Ready to share your app? [Show the Community what you're working on](https://discuss.streamlit.io/c/streamlit-examples/9)
 * Check out more app templates in the [Streamlit Cookbook](https://github.com/streamlit/cookbook0)
