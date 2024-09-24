@@ -1,11 +1,7 @@
 entrypoint = "README.md"
 modules = ["python-3.12"]
 
-[run]
-command = ["streamlit", "run", "streamlit_app.py"]
-
-[startup]
-command = ["streamlit", "run", "streamlit_app.py"]
+run = ["sh", "-c", "streamlit run streamlit_app.py"]
 
 [gitHubImport]
 requiredFiles = [".replit"]
